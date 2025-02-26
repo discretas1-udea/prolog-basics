@@ -49,7 +49,7 @@
 ![Screenshot 4](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/04.png)
 
 
-6. Cuando terminemos de escribir la base de conocimiento, debemos guardar el archivo dando clic en File y Save buffer.
+6. Cuando terminemos de escribir la base de conocimiento, debemos guardar el archivo dando clic en File y Save buffer                                    
 ![Screenshot 5](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/05.png)
 
 
