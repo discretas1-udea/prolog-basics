@@ -21,7 +21,7 @@
 <details><summary><b>Crear y consultar base de conocimiento en Windows</b></summary>
 
 1. Crear una carpeta donde se guardarán las bases de conocimiento. (No es obligatorio. Es solo para mantener el orden y evitar pérdidas de la información)
-2. Dar clic en el Menú de Prolog en la sección File
+2. Dar clic en el Menú de Prolog en la sección File                                                    
 ![Screenshot 1](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/01.png)
 
 
