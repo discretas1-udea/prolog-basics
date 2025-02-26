@@ -46,7 +46,7 @@
         carnivoro(A), animal(B), masDebil(B, A);
         herbivoro(A), plantaComestible(B).
     ```
-![Screenshot 4](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/04.png)
+    ![Screenshot 4](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/04.png)
 
 
 6. Cuando terminemos de escribir la base de conocimiento, debemos guardar el archivo dando clic en File y Save buffer                                    
