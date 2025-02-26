@@ -28,7 +28,7 @@
 3. Dar clic en "New"                              
 ![Screenshot 2](https://github.com/discretas1-udea/prolog-basics/blob/develop/readme/assets/windows/02.png)
 
-4. Nos ubicamos en la carpeta que creamos, le ponemos nombre al archivo con extensión .pl (Ej: base_conocimiento.pl) y damos clic en guardar
+4. Nos ubicamos en la carpeta que creamos, le ponemos nombre al archivo con extensión .pl (Ej: base_conocimiento.pl) y damos clic en guardar                        
 ![Screenshot 3](https://github.com/discretas1-udea/prolog-basics/blob/develop/readme/assets/windows/03.png)
 
 
