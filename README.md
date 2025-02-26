@@ -54,7 +54,7 @@
 
 
 
-7. Para saber si ya estamos consultando esta base de conocimiento, en Prolog escribimos el siguiente comando: `consult('base_conocimiento.pl')`. Recuerda cambiar el nombre del archivo según lo hayas guardado. Si vemos True en la consola, entonces estamos consultando la base de conocimiento correctamente. Si aparece false, debemos consultar correctamente el archivo. 
+7. Para saber si ya estamos consultando esta base de conocimiento, en Prolog escribimos el siguiente comando: `consult('base_conocimiento.pl')`. Recuerda cambiar el nombre del archivo según lo hayas guardado. Si vemos 'true' en la consola, entonces estamos consultando la base de conocimiento correctamente. Si aparece 'false', debemos consultar correctamente el archivo. 
 ![Screenshot 5](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/06.png)
 
 
