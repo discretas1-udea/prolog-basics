@@ -112,6 +112,7 @@
 <details><summary><b>Crear y consultar base de conocimiento en Google Colab</b></summary>
 
 La primera forma de trabajar con bases de conocimiento en Google Colab es escribirla directamente en una celda. Sin necesidad de cargar un archivo. Por cada hecho o regla debemos llamar el método `assertz` del objeto prolog que creamos en el [setup de prolog](https://github.com/discretas1-udea/prolog-setup). Esto se hace de la siguiente manera:
+
     ```python
     prolog.assertz("animal(conejo)")
     prolog.assertz("animal(perro)")
