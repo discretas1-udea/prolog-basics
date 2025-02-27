@@ -123,13 +123,13 @@ La primera forma de trabajar con bases de conocimiento en Google Colab es escrib
     prolog.assertz("come(A,B) :- carnivoro(A), animal(B), masDebil(B,A); herbivoro(A), plantaComestible(B)")
     ```
 
-    ```javascript I'm A tab
-    console.log('Code Tab A');
-    ```
+    
 
 Como se puede observar, con el objeto prolog estamos escribiendo hechos y reglas usando el método `assertz` del mismo. Sin necesidad de cargar archivos al entorno virtual. 
 
-
+```javascript I'm A tab
+    console.log('Code Tab A');
+    ```
 
 La segunda manera de usar bases de conocimiento en Prolog, es escribir la base de conocimiento con la sintaxis normal de Prolog en un archivo .pl en nuestro navegador, para luego cargarlo y consultarlo en el entorno virtual de la siguiente manera:
 
