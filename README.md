@@ -26,10 +26,10 @@
 
 
 3. Dar clic en "New"                              
-![Screenshot 2](https://github.com/discretas1-udea/prolog-basics/blob/develop/readme/assets/windows/02.png)
+![Screenshot 2](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/02.png)
 
 4. Nos ubicamos en la carpeta que creamos, le ponemos nombre al archivo con extensión .pl (Ej: base_conocimiento.pl) y damos clic en guardar                        
-![Screenshot 3](https://github.com/discretas1-udea/prolog-basics/blob/develop/readme/assets/windows/03.png)
+![Screenshot 3](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/windows/03.png)
 
 
 5. Esto abre una ventana la cual es un editor de nuestras bases de conocimiento. Aquí es donde escribiremos todos los hechos, las reglas y demás componentes de las bases de conocimiento. Para este ejemplo, se usará una pequeña base de conocimiento que se presenta en el [tutorial de prolog de SWISH](https://swish.swi-prolog.org/p/Tutorial%20de%20prolog.swinb) 
