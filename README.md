@@ -113,23 +113,20 @@
 
 La primera forma de trabajar con bases de conocimiento en Google Colab es escribirla directamente en una celda. Sin necesidad de cargar un archivo. Por cada hecho o regla debemos llamar el método `assertz` del objeto prolog que creamos en el [setup de prolog](https://github.com/discretas1-udea/prolog-setup). Esto se hace de la siguiente manera:
 
-    ```python
-    prolog.assertz("animal(conejo)")
-    prolog.assertz("animal(perro)")
-    prolog.assertz("carnivoro(perro)")
-    prolog.assertz("masDebil(conejo, perro)")
-    prolog.assertz("herbivoro(conejo)")
-    prolog.assertz("plantaComestible(lechuga)")
-    prolog.assertz("come(A,B) :- carnivoro(A), animal(B), masDebil(B,A); herbivoro(A), plantaComestible(B)")
-    ```
+ ```python
+prolog.assertz("animal(conejo)")
+prolog.assertz("animal(perro)")
+prolog.assertz("carnivoro(perro)")
+prolog.assertz("masDebil(conejo, perro)")
+prolog.assertz("herbivoro(conejo)")
+prolog.assertz("plantaComestible(lechuga)")
+prolog.assertz("come(A,B) :- carnivoro(A), animal(B), masDebil(B,A); herbivoro(A), plantaComestible(B)")
+```
 
-    
+   
 
 Como se puede observar, con el objeto prolog estamos escribiendo hechos y reglas usando el método `assertz` del mismo. Sin necesidad de cargar archivos al entorno virtual. 
 
-    ```javascript I'm A tab
-    console.log('Code Tab A');
-    ```
 
 La segunda manera de usar bases de conocimiento en Prolog, es escribir la base de conocimiento con la sintaxis normal de Prolog en un archivo .pl en nuestro navegador, para luego cargarlo y consultarlo en el entorno virtual de la siguiente manera:
 
