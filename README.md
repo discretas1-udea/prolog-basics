@@ -59,3 +59,47 @@
 
 
 </details>
+
+
+
+---
+
+
+
+<details><summary><b>Crear y consultar base de conocimiento en Linux</b></summary>
+
+1. Crear una carpeta donde guardaremos todas nuestras bases de conocimiento. (No es obligatorio guardar ordenadamente las bases de conocimiento pero facilita su consulta y evita pérdidas de información).
+
+2. Crear un archivo con el nombre que deseemos y la extensión `.pl`
+    ```bash
+    touch base_conocimiento.pl
+    ```
+3. Abrimos el archivo con un editor de texto y escribimos los hechos y reglas que conforman la base de conocimiento que posteriormente consultaremos. 
+
+    - Puede usar Nvim:
+    ```bash 
+    nvim base_conocimiento.pl
+    ```
+
+    - Nano:
+    ```bash
+    nano base_conocimiento.pl
+    ```
+
+    - O cualquier editor de texto que desee
+
+4. Para consultar la base de conocimiento que hemos creado, debemos tener una terminal abierta donde tengamos guardadas las bases de conocimiento. Con el comando `pwd` podemos observar en qué ruta estamos parados. Allí ejecutamos el siguiente comando para abrir Prolog:
+
+    ```bash
+    swipl
+    ```
+5. Ya dentro de Prolog, ejecutamos el siguiente comando para consultar la base de conocimiento que creamos previamente:
+    ```prolog
+    consult('base_conocimiento.pl').
+    ```
+
+6. Si la consola retorna `true` significa que está consultando correctamente la base de conocimiento que creamos. Si retorna un error, debemos verificar:
+    - Si estamos parados en la misma carpeta donde tenemos la base de conocimiento a consultar. Si no es así, cambiar el directorio y volver a ejecutar Prolog. 
+    - Si el archivo .pl efectivamente quedó creado donde queremos.
+
+</details>
