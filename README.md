@@ -59,3 +59,34 @@
 
 
 </details>
+
+
+
+---
+
+
+
+<details><summary><b>Crear y consultar base de conocimiento en Linux</b></summary>
+
+1. Crear una carpeta donde guardaremos todas nuestras bases de conocimiento. (No es obligatorio guardar ordenadamente las bases de conocimiento pero facilita su consulta y evita pérdidas de información).
+
+2. Crear un archivo con el nombre que deseemos y la extensión `.pl`
+```bash
+touch base_conocimiento.pl
+```
+3. Abrimos el archivo con un editor de texto y escribimos los hechos y reglas que conforman la base de conocimiento que posteriormente consultaremos. 
+
+Puede usar Nvim:
+```bash 
+nvim base_conocimiento.pl
+```
+
+Nano:
+```bash
+nano base_conocimiento.pl
+```
+
+O cualquier editor de texto que desee
+
+
+</details>
