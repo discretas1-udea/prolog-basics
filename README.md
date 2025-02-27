@@ -128,7 +128,7 @@ prolog.assertz("come(A,B) :- carnivoro(A), animal(B), masDebil(B,A); herbivoro(A
 Como se puede observar, con el objeto prolog estamos escribiendo hechos y reglas usando el método `assertz` del mismo. Sin necesidad de cargar archivos al entorno virtual. 
 
 
-La segunda manera de usar bases de conocimiento en Prolog, es escribir la base de conocimiento con la sintaxis normal de Prolog en un archivo .pl en nuestro navegador, para luego cargarlo y consultarlo en el entorno virtual de la siguiente manera:
+La segunda manera de usar bases de conocimiento en Prolog, es escribir la base de conocimiento con la sintaxis normal de Prolog en un archivo con extensión `.pl` en nuestro computador, para luego cargarlo y consultarlo en el entorno virtual de la siguiente manera:
 
 1. Crear un archivo .pl con los hechos y reglas de nuestra base de conocimiento. 
 
