@@ -76,17 +76,17 @@ touch base_conocimiento.pl
 ```
 3. Abrimos el archivo con un editor de texto y escribimos los hechos y reglas que conforman la base de conocimiento que posteriormente consultaremos. 
 
-Puede usar Nvim:
-```bash 
-nvim base_conocimiento.pl
-```
+    - Puede usar Nvim:
+    ```bash 
+    nvim base_conocimiento.pl
+    ```
 
-Nano:
-```bash
-nano base_conocimiento.pl
-```
+    - Nano:
+    ```bash
+    nano base_conocimiento.pl
+    ```
 
-O cualquier editor de texto que desee
+    - O cualquier editor de texto que desee
 
 
 </details>
