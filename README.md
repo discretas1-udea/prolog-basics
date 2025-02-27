@@ -103,3 +103,57 @@
     - Si el archivo .pl efectivamente quedó creado donde queremos.
 
 </details>
+
+
+
+---
+
+
+<details><summary><b>Crear y consultar base de conocimiento en Google Colab</b></summary>
+
+La primera forma de trabajar con bases de conocimiento en Google Colab es escribirla directamente en una celda. Sin necesidad de cargar un archivo. Por cada hecho o regla debemos llamar el método `assertz` del objeto prolog que creamos en el [setup de prolog](https://github.com/discretas1-udea/prolog-setup). Esto se hace de la siguiente manera:
+    ```python
+    prolog.assertz("animal(conejo)")
+    prolog.assertz("animal(perro)")
+    prolog.assertz("carnivoro(perro)")
+    prolog.assertz("masDebil(conejo, perro)")
+    prolog.assertz("herbivoro(conejo)")
+    prolog.assertz("plantaComestible(lechuga)")
+    prolog.assertz("come(A,B) :- carnivoro(A), animal(B), masDebil(B,A); herbivoro(A), plantaComestible(B)")
+    ```
+
+Como se puede observar, con el objeto prolog estamos escribiendo hechos y reglas usando el método `assertz` del mismo. Sin necesidad de cargar archivos al entorno virtual. 
+
+
+
+La segunda manera de usar bases de conocimiento en Prolog, es escribir la base de conocimiento con la sintaxis normal de Prolog en un archivo .pl en nuestro navegador, para luego cargarlo y consultarlo en el entorno virtual de la siguiente manera:
+
+1. Crear un archivo .pl con los hechos y reglas de nuestra base de conocimiento. 
+
+2. Una vez estemos en el notebook de Google Colab vamos a dar clic en la carpeta del menú vertical izquierdo. 
+    - Si no estamos conectados aún al entorno virtual, se demorará un momento en cargar el directorio. Debemos esperar a que se carguen las carpetas correspondientes. 
+    - Si ya estamos conectados podemos proceder.
+
+
+    ![Screenshot 1](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/colab/01.png)
+
+3. Luego, damos clic en el primer ícono del menú superior para cargar el archivo. Escogemos el archivo con extensión `.pl` donde tenemos nuestra base de conocimiento y observamos que se carga al directorio. 
+
+    ![Screenshot 2](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/colab/02.png)
+
+
+    ![Screenshot 3](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/colab/03.png)
+
+
+4. Ya con el archivo cargado a nuestro directorio actual de trabajo, podemos consultarlo ejecutando la siguiente celda:
+
+    ```python
+    prolog.consult('base_conocimiento.pl')
+    ```
+
+    - Si la celda se ejecuta correctamente, entonces ya podemos trabajar con nuestra base de conocimiento.
+
+    ![Screenshot 3](https://github.com/discretas1-udea/prolog-basics/blob/main/assets/colab/04.png)
+
+
+</details>
