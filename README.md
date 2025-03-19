@@ -243,4 +243,49 @@ Nos retorna una salida como la siguiente:
     X = socrates ;
     X = miVaca.
 
+### Consulta a base de conocimiento de calificaciones
+
+```prolog
+% Regla: Un estudiante aprueba si su calificación es mayor o igual a 6.
+aprobado(Estudiante) :- calificacion(Estudiante, Calificacion), Calificacion >= 6.
+
+% Base de conocimiento:
+calificacion(juan, 8).
+calificacion(maria, 5).
+calificacion(pedro, 7).
+calificacion(jose, 8).
+```
+
+Esta base de conocimiento tiene una regla la cual en palabras sería la siguiente:
+Si un estudiate ya está calificado y dicha calificación es igual o mayor a 6, entonces el estudiante será aprobado.
+
+Con el conocimiento definido anteriormente, se pueden plantear varios interrogantes para que Prolog resuelva. 
+
+**¿Qué nota sacó Juan?**
+```prolog
+calificacion(juan, X).
+```
+En la anterior consulta, la variable X tomará el valor de todas las calificaciones de Juan que estén registradas en la base de conocimiento. Como el ejercicio está diseñado para tener solo una calificación, la variable X tomará el valor de la nota de Juan y la retornará. 
+    
+    X = 8.
+
+**¿Quienes sacaron nota 8?**
+```prolog
+calificacion(X, 8).
+```
+En la anterior consulta, la variable X se convertirá en todas las personas que tengan calificación 8 en la base de conocimiento. 
+
+    X = juan ;
+    X = jose.
+
+**¿Quienes cumplen con la condición de aprobado?**
+```prolog
+aprobado(X).
+```
+En la anterior consulta, la variable X tomará el valor de cada persona que según la regla que definimos en la base de conocimiento, están aprobados. 
+
+    X = juan ;
+    X = pedro ;
+    X = jose.
+
 
