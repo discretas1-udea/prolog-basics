@@ -196,4 +196,21 @@ no_mortal(X) :- objeto(X).
 ```
 
 Ahora queremos crear algunas consultas para la base de conocimiento anterior. 
+Por ejemplo:
+¿Cuales sujetos en mi base de conocimiento son personas?
+Podemos observar que queremos verificar los sujetos de la base de datos que cumplan con la característica persona. Para hacer esto escribimos en la consola de Prolog:
+```prolog
+persona(X).
+```
+Esto nos retorna "X = maría;"
+
+Para continuar viendo los resultados, presionamos la tecla 'n' hasta que volvamos nuevamente a la consola de Prolog.
+
+Esto funciona porque la variable X va a tomar todos los valores que cumplen con el atributo persona y los va a retornar. 
+
+Nos proporciona la siguiente salida:
+    ?- persona(X).
+    X = maría ;
+    X = antonio ;
+    X = socrates.
 
