@@ -161,6 +161,7 @@ La segunda manera de usar bases de conocimiento en Prolog, es escribir la base d
 </details>
 
 ## Ejemplos de bases de conocimiento y consulta de ellas
+### Consulta a la base de mortales. 
 ```prolog
 % Hechos - Proposiciones simples
 
@@ -217,4 +218,29 @@ Nos proporciona la siguiente salida:
     X = maría ;
     X = antonio ;
     X = socrates.
+
+Ahora, que ya le consultamos a Prolog por información, hagamos que Prolog nos retorne todos los sujetos en mi base de conocimiento que son mortales. 
+
+Esta información ya no está explícita en la base de conocimiento, sino en las reglas:
+
+```prolog
+mortal(X) :- persona(X).
+mortal(X) :- animal(X).
+```
+
+Osea, que es información que al programa le toca inferir.
+
+```prolog
+mortal(X).
+```
+
+La anterior consulta, usa la variable X. Dicha variable se convertirá en todos y cada uno de los sujetos de mi base de conocimiento que cumplan con la propiedad mortal. 
+
+Nos retorna una salida como la siguiente:
+
+    X = maría ;
+    X = antonio ;
+    X = socrates ;
+    X = miVaca.
+
 
