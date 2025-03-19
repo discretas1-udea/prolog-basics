@@ -164,10 +164,12 @@ La segunda manera de usar bases de conocimiento en Prolog, es escribir la base d
 ```prolog
 % Hechos - Proposiciones simples
 
-% En un archivo prolog escribimos hechos y reglas que son lo que conocemos como premisas de un argumento. 
+% En un archivo prolog escribimos hechos y reglas que son lo que conocemos como premisas 
+% de un argumento. 
 
 % Escribamos hechos, para que Prolog tenga contexto de la situación que queremos plantear. 
-% Supongamos que queremos consultar cuando algo es mortal o no. Entonces escribamos hechos definiendo sujetos y sus propiedades. 
+% Supongamos que queremos consultar cuando algo es mortal o no. 
+% Entonces escribamos hechos definiendo sujetos y sus propiedades. 
 
 % Hechos
 persona(maría).
@@ -177,8 +179,21 @@ objeto(miImpresora).
 objeto(miCelular).
 animal(miVaca).
 
+% Para definir las reglas, primero tenemos que plantearlas como un CONDICIONAL.% con su respectivo antecedente y consecuente. 
+% Queremos que las personas y los animales sean mortales pero los objetos no. 
+% Planteado en un condicional sería:
+% Si X es una persona, entonces X es mortal
+% Si X es un animal, entonces X es mortal
+% Si X es un objeto, entonces X no es mortal
+
+% En Prolog la definición de reglas se hace con el condicional, solo que
+% aquí lo invertiremos, y leemos primero el consecuente y luego el antecedente.
+
 % Reglas
 mortal(X) :- persona(X).
 mortal(X) :- animal(X).
 no_mortal(X) :- objeto(X). 
 ```
+
+Ahora queremos crear algunas consultas para la base de conocimiento anterior. 
+
