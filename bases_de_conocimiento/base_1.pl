@@ -17,4 +17,3 @@ animal(miVaca).
 mortal(X) :- persona(X).
 mortal(X) :- animal(X).
 no_mortal(X) :- objeto(X). 
-
