@@ -8,6 +8,7 @@
 % Hechos
 persona(maría).
 persona(antonio).
+persona(socrates).
 objeto(miImpresora).
 objeto(miCelular).
 animal(miVaca).
